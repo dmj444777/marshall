@@ -941,14 +941,32 @@
 <div class="projectpgsfullwidth" id="fullwidthlandmarkpg">
   <div class="individualProjectPages">
     <p class="ProjectsBackButton" onclick="openProjectspg();closeLandmarkpg();">&lt; Back to Projects Page</p>
-    <p class="projectsExitButton" onclick="openProjectspg();closeLandmarkpg();"><b>X</b></p>   
+    <p class="projectsExitButton" onclick="openProjectspg();closeLandmarkpg();"><b>X</b></p>  
     <div class="projectimgdivs projectimgdiv1" id="projectimgdiv1_landmark">
-      <div class="projlastimagebuttonsdiv"><img class="projnextimagebuttons_invisible projlastimagebutton1" src="images\nextarrow_left_grey.png" alt=""/></div>
-      <div class="projectspagesimgsdiv"><img class="projectsPagesImgs projectpgimage1" src="images_projects\Landmark re-roof.jpg" alt=""/></div>
-      <div class="projnextimagebuttonsdiv"><img class="projnextimagebuttons_invisible projlastimagebutton1" src="images\nextarrow_right_grey.png" alt=""/></div>        
+      <div class="projlastimagebuttonsdiv"><img class="projnextimagebuttons" src="..\images\nextarrow_left_grey.png" alt=""/></div>
+      <div class="projectspagesimgsdiv"><img class="projectsPagesImgs projectpgimage1" src="../images_projects\Landmark re-roof.jpg" alt=""/></div>
+      <div class="projnextimagebuttonsdiv" onclick="openLandmarkImage2();closeLandmarkImage1();">
+        <img class="projnextimagebuttons buttonwhite" src="../images\nextarrow_right_white.png" alt=""/>
+        <img class="projnextimagebuttons buttonblue" src="../images\nextarrow_right_blue.png" alt=""/>
+      </div>
+    </div>
+    <div class="projectimgdivs projectimgdiv2" id="projectimgdiv2_landmark">
+      <div class="projlastimagebuttonsdiv" onclick="openLandmarkImage1();closeLandmarkImage2();">
+        <img class="projnextimagebuttons buttonwhite" src="../images\nextarrow_left_white.png" alt=""/>
+        <img class="projnextimagebuttons buttonblue" src="../images\nextarrow_left_blue.png" alt=""/>
+      </div>
+      <div class="projectspagesimgsdiv"><img class="projectsPagesImgs projectpgimage2" src="../images_projects\Landmark re-roof2.jpeg" alt=""/></div>
+      <div class="projnextimagebuttonsdiv"><img class="projnextimagebuttons" src="../images\nextarrow_right_grey.png" alt=""/></div>
     </div>
     <p class="ProjectsPgTitles">LANDMARK</p><p class="ProjectsPgTitles2">Boston, Massachusetts</p>
-  </div>         
+  </div>  
+    <!-- LANDMARK JAVASCRIPT ......................................... -->    
+    <script>
+        function openLandmarkImage1() {document.getElementById("projectimgdiv1_landmark").style.display="grid";}
+        function closeLandmarkImage1() {document.getElementById("projectimgdiv1_landmark").style.display="none";}
+        function openLandmarkImage2() {document.getElementById("projectimgdiv2_landmark").style.display="grid";}
+        function closeLandmarkImage2() {document.getElementById("projectimgdiv2_landmark").style.display="none";}
+    </script>
 </div>
 
 <!-- ......................................................................................................................................................................................................... --> 
