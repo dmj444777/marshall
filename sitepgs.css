@@ -236,7 +236,7 @@ hr{width:50vw;margin:auto auto 5vh auto;}           .hrMobileMenu{width:80vw;mar
             font-family:var(--Antonio);font-weight:400;font-size:32px;text-decoration:none;text-align:center;
             box-sizing:border-box;border:1px solid var(--greyborder);border-style:solid none solid none;}
 .servicesBoxTextGroup{box-sizing:border-box;border:1px solid var(--greyborder);background-color:white;min-width:225px;}
-    .servicesBoxDesc2{position:relative;margin:10px;font-family:var(--Yan);font-weight:300;font-size:18px;text-decoration:none;text-align:center;}
+    .servicesBoxDesc2{position:relative;margin:10px;font-family:var(--Yan);font-weight:400;font-size:18px;text-decoration:none;text-align:center;}
 .servicesGridempty{position:relative;margin:10vh auto auto auto;padding:auto;}               
 #servicespgBottomHR{position:relative;margin:15vh auto 5vh auto;}
 #servicespgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);}
@@ -248,8 +248,17 @@ hr{width:50vw;margin:auto auto 5vh auto;}           .hrMobileMenu{width:80vw;mar
 .servicespgGrid1{display:none;}
 .servicespgGrid1Mobile{display:grid;position:relative;margin:16vh auto auto auto;padding:0;left:15vw;
         grid-template-columns:70vw;gap:0;align-content:center;vertical-align:middle;text-align:center;
-        grid-template-rows: 30vh 7vh 6vh 30vh 7vh 6vh 30vh 9vh 6vh 30vh 7vh 6vh 30vh 5vh 6vh 30vh 5vh 6vh 
-                            30vh 5vh 6vh 30vh 7vh 6vh 30vh 7vh 6vh 30vh 9vh 6vh 30vh 9vh;}
+        grid-template-rows: 30vh 70px 6vh 
+                            30vh 70px 6vh 
+                            30vh 90px 6vh 
+                            30vh 70px 6vh 
+                            30vh 40px 6vh 
+                            30vh 40px 6vh 
+                            30vh 40px 6vh 
+                            30vh 70px 6vh 
+                            30vh 70px 6vh 
+                            30vh 90px 6vh 
+                            30vh 90px;}
 .servicesImgDiv{position:relative;margin:auto;height:30vh;overflow:hidden;}         .servicesImgGridDiv{}
 .servicesboxImages{position:relative;margin:auto;inset:auto;
         width:70vw;height:30vh;float:inherit;vertical-align:middle;object-fit:cover;
@@ -258,7 +267,7 @@ hr{width:50vw;margin:auto auto 5vh auto;}           .hrMobileMenu{width:80vw;mar
 .servicesBoxTextGroup{position:relative;top:0;box-sizing:border-box;border:1px solid var(--greyborder);background-color:white;}
 .servicesBoxDesc1{position:relative;margin:-28vh auto auto auto;background-color:var(--white80);
         font-family:var(--Antonio);font-weight:500;font-size:32px;text-decoration:none;text-align:center;}
-.servicesBoxDesc2{position:relative;margin:10px;font-size:18px;font-family:var(--Yan);font-weight:300;text-decoration:none;text-align:center;}
+.servicesBoxDesc2{position:relative;margin:10px;font-size:18px;font-family:var(--Yan);font-weight:400;text-decoration:none;text-align:center;}
 #servicespgBottomHR{position:relative;margin:10vh auto 5vh auto;width:80vw;}
 #servicespgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);} 
 }        
