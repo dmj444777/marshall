@@ -10,7 +10,7 @@ body {background-color:white;padding:0;margin:0;}
 /* ------------------------------------------------------------------------------------------------------------------------*/
 /* MAIN - Large devices (laptops/desktops)----------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
-body{padding:0;margin:0;background-image:url('../images_projects/1611343941001.1.jpg');
+body{padding:0;margin:0;background-image:url('images_projects/1611343941001.1.jpg');
         background-size:cover;background-repeat:no-repeat;background-position:0,0;min-width:100vw;min-height:100vh;}
 hr{width:70vw;margin:5vh auto 10vh auto;}        
 .sitepgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
@@ -20,7 +20,7 @@ hr{width:70vw;margin:5vh auto 10vh auto;}
 /* MAIN - Small devices (mobile phones, etc)---------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
 body{padding:0;margin:0;width:100%;min-width:100vw;min-height:100vh;background-position:0,10vh;overflow-x:hidden;
-        background:rgba(255,255,255,0) url('../images_projects/1611343941001.2.mobile.jpg') no-repeat fixed;}
+        background:rgba(255,255,255,0) url('images_projects/1611343941001.2.mobile.jpg') no-repeat fixed;}
 hr{width:50vw;margin:auto auto 5vh auto;}           .hrMobileMenu{width:80vw;margin:auto;}
 .sitepgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
 .PgTitles{position:relative;margin:6vh auto 10vh auto;font-family:var(--Antonio);font-weight:400;font-size:40px;top:10vh;}
