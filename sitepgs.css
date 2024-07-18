@@ -1,0 +1,443 @@
+:root{
+    --blue:#2b02fe;
+    --Antonio:"Antonio",sans-serif;--Yan:"Yantramanav",sans-serif;
+    --white80:rgba(255,255,255,0.8);--greyborder:#717171;
+}
+
+body {background-color:white;padding:0;margin:0;}
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* MAIN - Large devices (laptops/desktops)----------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+body{padding:0;margin:0;background-image:url('../images_projects/1611343941001.1.jpg');
+        background-size:cover;background-repeat:no-repeat;background-position:0,0;min-width:100vw;min-height:100vh;}
+hr{width:70vw;margin:5vh auto 10vh auto;}        
+.sitepgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
+.PgTitles{position:relative;margin:6vh auto;font-family:var(--Antonio);font-weight:400;font-size:72px;top:10vh;}
+.mobileheader,#mobilelogo,#mobilelogoimg,#mobilemenu,.mobilemenubutton,#mobilemenuimg,#mobilemenuexit,.menuicon,#homepgNameplateMobile{display:none;}
+}    
+/* MAIN - Small devices (mobile phones, etc)---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+body{padding:0;margin:0;width:100%;min-width:100vw;min-height:100vh;background-position:0,10vh;overflow-x:hidden;
+        background:rgba(255,255,255,0) url('../images_projects/1611343941001.2.mobile.jpg') no-repeat fixed;}
+hr{width:50vw;margin:auto auto 5vh auto;}           .hrMobileMenu{width:80vw;margin:auto;}
+.sitepgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
+.PgTitles{position:relative;margin:6vh auto 10vh auto;font-family:var(--Antonio);font-weight:400;font-size:40px;top:10vh;}
+}
+/* MOBILE MENU--------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+#mobilemenu{position:relative;width:100vw;background-color:white;min-height:90vh;top:0;padding:0;margin:0;}
+#fullwidthmobilemenu{width:0;height:90vh;top:10vh;margin:0;padding:0;}
+.mobilemenutopspace,.mobilemenubuttongroup,.menubuttonMobile{background-color:#bebebe;}
+        .mobilemenutopspace{position:relative;height:40px;}
+        .mobilemenubuttongroup{position:relative;width:100vw;left:0;}
+        .menubuttonMobile{margin:10px auto;color:var(--blue);border:none;font-family:var(--Antonio);font-weight:400;font-size:30px;}
+.mobilemenuContactIcons{display:grid;position:relative;margin:30px auto auto calc( 50vw - 160px );padding:0;
+            grid-template-columns:40px 255px;grid-template-rows:40px 40px 40px;gap:25px;vertical-align:middle;}
+.contacticonsdivMobileMenu,.contacticonMobileMenu{height:40px;}
+.contacttextdivMobileMenu{position:relative;margin:auto auto auto 0;text-align:left;vertical-align:middle;}
+    .contactinfoMobileMenu{margin:auto;font-family:var(--Antonio);font-weight:400;font-size:25px;}
+        .mobileMenuContactLink:link,.mobileMenuContactLink:visited,.mobileMenuContactLink:hover,.mobileMenuContactLink:active{color:var(--blue);text-decoration:none;}
+#mobilemenucopyrightdiv{position:absolute;bottom:0;text-align:center;width:100vw;}
+    .mobilemenucopyright{font-size:12px;font-family:var(--Yan);font-weight:300;}
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* HEADER (DESKTOP)--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {    
+.siteheader{position:absolute;height:10vh;width:100vw;inset:0 auto 0 auto;text-align:center;background-color:white;z-index:100;}
+#headerLogoImg{display:block;position:relative;margin:auto auto auto 15vw;height:10vh;z-index:120;}
+        #headerLogoImg:hover{cursor:pointer;}   .headermenubuttons:hover{color:var(--blue);cursor:pointer;}
+#headerbuttongroup{position:relative;margin:-10vh auto auto 22vw;height:10vh;}
+    .headermenubuttons{display:inline-block;position:relative;margin:auto;height:10vh;width:7vw;border:none;
+            font-family:var(--Antonio);font-size:20px;font-weight:400;background-color:white;}
+#headerbuttonhighlightsection{display:grid;position:absolute;margin:-1vh 0 0 0;padding:0;height:1vh;width:100%;top:10vh;z-index:100;
+            grid-template-columns:39vw 7vw 8vw 7vw 7vw 8vw 7vw auto;gap:0;text-align:center;background-color:white;}
+#headerbuttonhighlighton{background-color:var(--blue);} .headerbuttonhighlights{}
+}
+/* MOBILE HEADER-----------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {       
+#siteheader,#headerLogoImg,#headerbuttongroup,.headermenubuttons,#mobilemenuexit,
+        #headerbuttonhighlightsection,#headerbuttonhighlighton,.headerbuttonhighlights{display:none;}
+.mobileheader{display:block;position:absolute;inset:0 auto 0 auto;height:10vh;width:100vw;z-index:100;background-color:white;} 
+.mobilelogo,.mobilelogoimg{display:block;position:relative;margin:auto;padding:auto;height:10vh;}
+    .mobilelogo{margin:auto auto auto 5vw;float:left;}          #mobilemenuimg{}
+.mobilemenuicon,.mobilemenuiconbutton{display:block;position:relative;height:6vh;}
+    .mobilemenuiconbutton{margin:2vh 10px auto auto;padding:auto;float:right;top:0;}             
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+ /* FOOTER (DESKTOP)--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {    
+.mobilefooter{display:none;}
+.footer{position:relative;margin:auto;padding:auto auto 5vh auto;inset:auto 0 0 auto;width:100%;background-color:white;text-align:center;height:55vh;}
+.contactcontainer{display:grid;position:relative;margin:10vh auto auto 20vw;padding:0;inset:10vh auto auto auto;
+            height:auto;grid-template-columns:20vw 20vw 20vw;gap:0;text-align:center;}
+.copyright{position:relative;margin:auto;top:20vh;vertical-align:middle;font-size:14px;font-family:var(--Yan);font-weight:300;}
+.footerContactLink:link,.footerContactLink:visited,.footerContactLink:hover,.footerContactLink:active{color:var(--blue);text-decoration:none;}
+}
+/* MOBILE FOOTER-----------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+.footer,.footercontacttitles{display:none;}
+.mobilefooter{display:block;position:relative;margin:auto;padding:auto auto 5vh auto;inset:auto 0 0 auto;
+    background-color:white;width:100%;text-align:center;height:55vh;}
+.footercontactcontainer{display:grid;position:relative;margin:auto auto auto calc( 50vw - 160px );padding:0;inset:50px auto 15vw auto;
+        grid-template-columns:40px 255px;grid-template-rows:40px 40px 40px;gap:25px;align-content:center;vertical-align:middle;}
+.footercontacticonsdiv,.footercontacticon,.footercontactinfo,.footercopyright{position:relative;margin:auto;}
+    .footercontacticon{display:block;height:40px;}
+.footercontacttextdiv{position:relative;margin:auto auto auto 0;text-align:left;vertical-align:middle;}
+.footercontactinfo{margin:auto;font-family:var(--Antonio);font-weight:400;font-size:25px;}
+.footercopyright{position:absolute;bottom:0;margin:auto auto auto calc( 50vw - 140px );vertical-align:middle;font-size:12px;font-family:var(--Yan);font-weight:300;}
+.footerContactLink:link,.footerContactLink:visited,.footerContactLink:hover,.footerContactLink:active{color:var(--blue);text-decoration:none;}
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* HOMEPAGE (DESKTOP)-------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+.homeactionstmt_smallMobile,.homeactionstmt_mediumMobile,.homeactionstmtTextMobile,#mobilehomepageImageContainer,
+            .homesvcsheadMobile,.homesafetyheadMobile{display:none;}        #homepgbox1,#homepgbox2,#homepgbox3{}
+.fullwidthhomepg{position:absolute;inset:10vh auto 0 auto;width:100vw;overflow-x:hidden;text-align:center;}
+#homepg{position:relative;margin:auto;padding:auto;width:100%;height:90vh;inset:auto;overflow-x:hidden;text-align:center;border:none;}  
+#homepageImageContainer{display:grid;position:relative;margin:0;padding:0;height:80vh;width:100%;text-align:center;
+            grid-template-columns:25vw 25vw 25vw 25vw;gap:0;}
+    .homegriditem{position:relative;margin:auto;height:80vh;object-fit:cover;}
+    .homepgimages{display:block;position:relative;margin:auto;height:80vh;max-width:100%;object-fit:cover;}
+#homeactionstmt{display:table;position:relative;margin:-33vh auto 0 auto;width:100vw;background-color:rgba(255,255,255,0.75);text-align:center;
+            font-family:var(--Antonio);font-size:4.5vh;font-weight:400;}
+    .homeactionstmtText{position:relative;margin:4vh auto 3vh auto;}
+        .homeactionstmt_small{font-size:2.8vh;font-family:var(--Yan);font-weight:300;}
+.pgtitleshome{position:relative;margin:auto;text-align:center;text-decoration:none;vertical-align:middle;font-size:28px;font-family:var(--Antonio);font-weight:400;}
+#homepglower{margin:-5vh auto auto auto;width:80vw;background-color:var(--white80);min-height:100vh;}
+.homepgservicessection{position:relative;margin:10vh auto auto auto;padding:auto;}
+.homepgcontainer/*svcs section*/,.homeProjectsGrid{display:grid;position:relative;padding:0;vertical-align:middle;text-align:center;align-content:center;}
+        .homepgcontainer/*svcs section*/{margin:15vh auto 5vh 8vw;grid-template-columns:32vw 32vw;grid-template-rows:6vh 6vh 6vh 6vh 6vh;gap:2vh 2vw;} 
+        .homeProjectsGrid{margin:-5vh auto 5vh auto;left:6vw;grid-template-columns:20vw 20vw 20vw;grid-template-rows:40vh;gap:0 4vw;}
+.homepgboxes{position:relative;padding:auto;align-content:center;vertical-align:middle;text-align:center;border:1px solid black;}
+    .homeprojectsboxes{position:relative;margin:auto;width:20vw;float:left;border:2px solid var(--greyborder);}
+.homesvcshead,.homesafetyhead{position:relative;top:10vh;font-size:2.8vh;font-family:var(--Yan);font-weight:300;}  
+.homesvcsLink,.homesafetyLink{font-family:var(--Yan);font-weight:300;font-size:20px;margin:auto auto 10vh auto;color:var(--blue);}
+        .homesvcsLink:hover,.homesafetyLink:hover{cursor:pointer;text-decoration:underline;}
+#PgTitlesHomepgProjects{position:relative;top:-5vh;font-size:32px;}
+.homepgSafetysection{position:relative;margin:-10vh auto;padding:auto;height:30vh;}
+#homepgBottomHR{position:relative;margin:10vh auto 5vh auto;}
+.homepgBottomDiv{position:relative;height:5vh;margin:auto auto -10vh auto;}
+}
+/* MOBILE HOMEPAGE----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+#homeactionstmt,.homeactionstmtText,.homeactionstmt_small,#homepageImageContainer,.homesvcshead,.homesafetyhead{display:none;}
+.fullwidthhomepg{position:relative;inset:10vh auto 0 auto;width:100vw;overflow-x:hidden;text-align:center;}
+#homeactionstmtMobile{display:table;position:relative;margin:-32vh auto 0 auto;width:100vw;text-align:left;
+            background-color:rgba(255,255,255,0.75);font-family:var(--Antonio);font-size:34px;font-weight:600;}
+.homeactionstmtTextMobile{position:relative;margin:auto auto 3vh auto;width:90vw;}
+    .homeactionstmt_mediumMobile{position:relative;margin:5px auto auto auto;font-weight:300;font-size:22px;}
+    .homeactionstmt_smallMobile{font-size:2.8vh;font-family:var(--Yan);font-weight:300;}
+#homepg{position:relative;margin:auto;width:100vw;height:90vh;overflow-x:hidden;text-align:center;border:none;} 
+#homepglower{margin:-6vh auto auto auto;width:100vw;background-color:var(--white80);min-height:100vh;}
+    .homepgboxes{position:relative;padding:auto;align-content:center;vertical-align:middle;text-align:center;border:1px solid var(--greyborder);}
+    .pgtitleshome{position:relative;margin:auto;text-align:center;text-decoration:none;vertical-align:middle;
+                font-size:24px;font-family:var(--Antonio);font-weight:400;}
+    #homepgbox1,#homepgbox2,#homepgbox3{}
+    #mobilehomepageImageContainer{display:grid;position:relative;margin:0;padding:0;height:85vh;width:100%;
+            grid-template-columns:50vw 50vw;gap:0;text-align:center;}
+.homepgcontainer{display:grid;position:relative;margin:15vh auto 5vh 20vw;padding:0;vertical-align:middle;text-align:center;align-content:center;
+        grid-template-columns:60vw;grid-template-rows:44px 44px 44px 44px 44px 44px 44px 44px 44px 44px;gap:2vh 2vw;}
+.homegriditem,.homepgimages{position:relative;margin:auto;height:85vh;object-fit:cover;}    .homepgimages{display:block;max-width:100%;}
+.homepgservicessection{position:relative;margin:10vh auto auto auto;padding:auto;}
+      .homesvcsheadMobile{position:relative;top:10vh;font-size:24px;font-family:var(--Yan);font-weight:300;}
+      .homesvcsLink{font-family:var(--Yan);font-weight:300;font-size:24px;margin:auto auto 10vh auto;color:var(--blue);}
+#PgTitlesHomepgProjects{position:relative;top:-5vh;font-size:32px;margin:10vh auto 5vh auto;}
+    .homeProjectsGrid{display:grid;position:relative;margin:-5vh auto 5vh auto;padding:0;left:20vw;vertical-align:middle;text-align:center;
+            grid-template-columns:60vw;grid-template-rows:40vh 40vh 40vh;gap:4vh 0;align-content:center;}
+    .homeprojectsboxes{position:relative;margin:auto;width:60vw;background-color:white;border:5px solid var(--greyborder);}
+.homepgSafetysection{position:relative;margin:-10vh auto;padding:auto;height:30vh;width:80vw;text-align:left;}
+    .homesafetyheadMobile{position:relative;top:10vh;font-size:24px;font-family:var(--Yan);font-weight:300;} 
+    .homesafetyLink{font-family:var(--Yan);font-weight:300;font-size:24px;margin:auto auto 10vh auto;color:var(--blue);}
+#homeHR1,#homeHR2,#homepgBottomHR{position:relative;margin:10vh auto 5vh auto;width:90vw;}    
+.homepgBottomDiv{position:relative;height:5vh;margin:auto auto -10vh auto;}
+.copyright{color:white;font-family:serif;font-size:2vh;margin:5vh auto;}
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------*/   
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ABOUT PAGE (DESKTOP) ----------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+#aboutpgDiv{margin:auto;padding:10vh auto 10vh auto;width:80vw;top:0;background-color:var(--white80);}
+#aboutpgLogoTitle{display:block;position:relative;margin:auto;width:30vw;inset:15vh auto auto auto;}
+#abouttextgrpDiv{position:relative;margin:20vh auto 0 auto;width:60vw;}
+.abouttext{font-size:20px;text-align:left;font-family:var(--Yan);font-weight:300;}                               
+.applicatorTextTitle{position:relative;margin:5vh auto;text-align:center;font-size:24px;font-family:var(--Yan);font-weight:300;}
+.aboutpgGrid1Div,.aboutpgGrid2Div{display:grid;position:relative;margin:auto;padding:0;text-align:center;vertical-align:middle;align-content:center;}
+.aboutpgGrid1Div{inset:6vh auto auto 8vw;grid-template-columns:20vw 20vw 20vw;grid-template-rows:10vh 10vh 10vh;gap:5vh 2vw;}
+        #carlisle,#sarnafil,#versico,#johnsmanville{height:45px;} 
+        #firestone,#tremco{height:60px;}#hydrotech,#gaf{height:75px;}#sika{height:90px;}
+.aboutpgGrid2Div{grid-template-columns:16vw 16vw 16vw 16vw 16vw;grid-template-rows:10vh 70px;gap:0;}
+        #nrcaimg,#bteaimg,#nercaimg,#smacnaimg{height:60px;}#asmimg{height:90px;}
+        .aboutpgGrid2DivMobile{display:none;}
+    .applicatorTextGroup{position:relative;top:0;width:15vw;margin:auto;}
+        .orgDesc{font-family:var(--Yan);font-weight:300;font-size:15px;text-decoration:none;text-align:center;}
+.orgImgDiv,.affiliationsImages{display:block;position:relative;margin:auto;}
+    .affiliationsImages{height:15vh;max-width:20vw;float:inherit;text-align:center;vertical-align:middle;object-fit:contain;} 
+#safetylinkDiv{width:80vw;height:17vh;margin:auto;padding:auto;vertical-align:middle;}
+    #safetypolicy{position:relative;width:60vw;top:5vh;margin:auto;font-size:3vh;
+            font-family:var(--Yan);font-weight:300;text-align:center;vertical-align:middle;}       
+        #safetypolicy:hover{cursor:pointer;}
+#aboutpgHR1{margin:10vh auto 5vh auto;}         #aboutpgHR2{margin:15vh auto 5vh auto;}
+    #aboutpgHR3{margin:10vh auto 5vh auto;}     #aboutpgBottomHR{margin:5vh auto;}
+#aboutpgBottomDiv{position:relative;background-color:var(--white80);height:10vh;top:20vh;margin:auto auto -15vh auto;}   
+}              
+/* MOBILE ABOUT PAGE -------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+#aboutpgDiv{margin:auto;padding:10vh auto 10vh auto;width:100vw;top:0;background-color:var(--white80);}
+#aboutpgLogoTitle{display:block;position:relative;margin:auto;width:80vw;inset:15vh auto auto auto;}
+#abouttextgrpDiv{margin:20vh auto 10vh auto;width:80vw;}
+.abouttext{margin:auto auto 2vh auto;width:80vw;font-size:18px;text-align:left;font-family:var(--Yan);font-weight:300;}
+#safetylinkDiv{width:80vw;height:17vh;margin:auto;padding:auto;vertical-align:middle;}
+    #safetypolicy{margin:auto auto 10vh auto;font-size:3vh;font-family:var(--Yan);font-weight:300;}
+.orgImgDiv,.affiliationsImages{display:block;position:relative;margin:auto;}
+    .affiliationsImages{inset:auto;height:15vh;float:inherit;vertical-align:middle;object-fit:contain;}
+.applicatorTextTitle{position:relative;margin:5vh auto;text-align:center;font-size:24px;font-family:var(--Yan);font-weight:300;}
+.applicatorTextGroup{position:relative;top:0;}
+.orgDesc{font-family:var(--Yan);font-weight:300;text-decoration:none;text-align:left;vertical-align:middle;}
+.aboutpgGrid1Div,.aboutpgGrid2DivMobile{display:grid;position:relative;margin:auto;padding:0;
+            text-align:center;vertical-align:middle;align-content:center;}
+.aboutpgGrid1Div{inset:auto auto auto 8vw;grid-template-columns:40vw 40vw;grid-template-rows:10vh 10vh 10vh 10vh 10vh;gap:5vh 2vw;}
+        #carlisle,#sarnafil,#versico,#johnsmanville{height:45px;} 
+        #firestone,#tremco{height:60px;}#hydrotech,#gaf{height:75px;}#sika{height:90px;}
+.aboutpgGrid2DivMobile{inset:auto auto auto calc( 50vw - 180px );grid-template-columns:140px 200px;grid-template-rows:10vh 10vh 10vh 10vh 10vh;gap:20px;}
+    .aboutpgGrid2Div{display:none;}
+        #nrcaimg,#bteaimg{height:80px;}#nercaimg{height:50px;}#smacnaimg{height:60px;}#asmimg{height:90px;}
+    .applicatorTextGroup{position:relative;top:0;margin:auto;}
+        .orgDesc{font-family:var(--Yan);font-weight:300;font-size:15px;text-decoration:none;text-align:left;}
+#aboutpgHR1,#aboutpgHR2,#aboutpgHR3,#aboutpgBottomHR{width:90vw;margin:10vh auto 5vh auto;}
+    #aboutpgBottomHR{margin:5vh auto;}
+#aboutpgBottomDiv{position:relative;background-color:var(--white80);height:10vh;top:20vh;margin:auto auto -15vh auto;}
+}   
+ 
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* SERVICES PAGE (DESKTOP) -------------------------------------------------------------------------------------------*/  
+@media only screen and (min-width: 768px) {  
+#servicespg{margin:auto;padding:10vh auto 0 auto;background-color:var(--white80);width:80vw;min-height:100vh;top:0;}
+#svcsPgTitle1{margin:10vh auto auto auto;}
+.servicespgGrid1Mobile{display:none;}
+.servicespgGrid1{display:grid;position:relative;margin:16vh auto auto auto;padding:0;left:6vw;
+        grid-template-columns:20vw 20vw 20vw;grid-template-rows:30vh 140px 10vh 30vh 90px 10vh 30vh 90px 10vh 30vh 140px;
+        gap:0 4vw;align-content:center;vertical-align:middle;text-align:center;}
+.servicesImgGridDiv,.servicesImgDiv{position:relative;margin:auto;height:30vh;overflow:hidden;}
+    .servicesImgGridDiv,.servicesboxImages{width:20vw;min-width:225px;}
+        .servicesboxImages{display:block;position:relative;margin:auto;height:30vh;inset:auto;float:inherit;vertical-align:middle;object-fit:cover;
+                box-sizing:border-box;border:1px solid var(--greyborder);border-style:solid solid none solid;}
+.servicesBoxText{position:relative;top:0;box-sizing:border-box;border:1px solid var(--greyborder);min-width:225px;}
+    .servicesBoxDesc1{;position:relative;margin:-28vh auto auto auto;background-color:var(--white80);
+            font-family:var(--Antonio);font-weight:400;font-size:32px;text-decoration:none;text-align:center;
+            box-sizing:border-box;border:1px solid var(--greyborder);border-style:solid none solid none;}
+.servicesBoxTextGroup{box-sizing:border-box;border:1px solid var(--greyborder);background-color:white;min-width:225px;}
+    .servicesBoxDesc2{position:relative;margin:10px;font-family:var(--Yan);font-weight:300;font-size:18px;text-decoration:none;text-align:center;}
+.servicesGridempty{position:relative;margin:10vh auto auto auto;padding:auto;}               
+#servicespgBottomHR{position:relative;margin:15vh auto 5vh auto;}
+#servicespgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);}
+}       
+/* MOBILE SERVICES PAGE ----------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {         
+#servicespg{margin:auto;padding:10vh auto 10vh auto;top:0;width:100vw;background-color:var(--white80);min-height:100vh;}
+#svcsPgTitle1{margin:10vh auto auto auto;}
+.servicespgGrid1{display:none;}
+.servicespgGrid1Mobile{display:grid;position:relative;margin:16vh auto auto auto;padding:0;left:15vw;
+        grid-template-columns:70vw;gap:0;align-content:center;vertical-align:middle;text-align:center;
+        grid-template-rows: 30vh 7vh 6vh 30vh 7vh 6vh 30vh 9vh 6vh 30vh 7vh 6vh 30vh 5vh 6vh 30vh 5vh 6vh 
+                            30vh 5vh 6vh 30vh 7vh 6vh 30vh 7vh 6vh 30vh 9vh 6vh 30vh 9vh;}
+.servicesImgDiv{position:relative;margin:auto;height:30vh;overflow:hidden;}         .servicesImgGridDiv{}
+.servicesboxImages{position:relative;margin:auto;inset:auto;
+        width:70vw;height:30vh;float:inherit;vertical-align:middle;object-fit:cover;
+        box-sizing:border-box;border:1px solid var(--greyborder);border-style:solid solid none solid;}
+.servicesBoxText{position:relative;top:0;box-sizing:border-box;border:1px solid var(--greyborder);}
+.servicesBoxTextGroup{position:relative;top:0;box-sizing:border-box;border:1px solid var(--greyborder);background-color:white;}
+.servicesBoxDesc1{position:relative;margin:-28vh auto auto auto;background-color:var(--white80);
+        font-family:var(--Antonio);font-weight:500;font-size:32px;text-decoration:none;text-align:center;}
+.servicesBoxDesc2{position:relative;margin:10px;font-size:18px;font-family:var(--Yan);font-weight:300;text-decoration:none;text-align:center;}
+#servicespgBottomHR{position:relative;margin:10vh auto 5vh auto;width:80vw;}
+#servicespgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);} 
+}        
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* PROJECTS PAGE (DESKTOP) -------------------------------------------------------------------------------------------*/  
+
+@media only screen and (min-width: 768px) {
+.projectpgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
+#projectspg{margin:auto;padding:10vh auto 10vh auto;top:0;width:80vw;min-height:100vh;background-color:var(--white80);}
+#ProjectsPgTitle1{margin:10vh auto 6vh auto;}
+.ProjectsPgTitle2{position:relative;top:10vh;font-family:var(--Yan);font-weight:300;}
+.projectspgGrid{display:grid;position:relative;margin:16vh auto auto auto;padding:0;left:6vw;
+        grid-template-columns:20vw 20vw 20vw;grid-template-rows:40vh 6vh 40vh 6vh 40vh 6vh 40vh 6vh 40vh 6vh;
+        gap:0 4vw;align-content:center;vertical-align:middle;text-align:center;}
+    .projectspgGridMobile{display:none;}
+.projectspgboxes{position:relative;margin:auto;width:20vw;float:left;border:2px solid var(--greyborder);}
+        .projectspgboxes:hover{background-color:white;color:var(--blue);cursor:pointer;}
+.projectsImgDiv{position:relative;margin:auto;height:30vh;overflow:hidden;}
+.projectsboxImages{display:block;position:relative;margin:auto;inset:auto;width:20vw;height:30vh;float:inherit;vertical-align:middle;object-fit:cover;}
+.projboxdivisionline{position:relative;margin:auto;background-color:var(--greyborder);height:2px;}
+.projectsBoxTextGroup{position:relative;top:0;}         .projectsBoxTextGroup:hover{color:var(--blue);}
+.projBoxDesc1{margin:auto;text-decoration:none;text-align:center;color:var(--blue);font-family:var(--Antonio);font-weight:400;font-size:25px;}
+        .projBoxDesc1:hover{color:var(--blue);font-weight:600;}
+.projBoxDesc2{font-family:var(--Yan);font-weight:300;margin:auto;text-decoration:none;text-align:center;}
+#projectspgBottomHR{position:relative;margin:5vh auto;}
+#projectspgBottomDiv{position:relative;height:10vh;top:20vh;margin:auto auto -15vh auto;background-color:var(--white80);}   
+    
+/* PROJECTS: INDIVIDUAL PROJECTS PAGES -----------------------------------------------------------------------------------------------------*/ 
+#fullwidthauerbachpg,#fullwidthclarendonpg,#fullwidthnewbalancepg,#fullwidthnortheasternpg,
+        #fullwidthseaport1pg,#fullwidthbostoncollegepg,#fullwidthmacallenpg,#fullwidthpostofficepg,
+        #fullwidthgailenpg,#fullwidthklarminpg,#fullwidthparcelmpg,#fullwidthpier4pg,
+        #fullwidthwatertownpg,#fullwidthdrydockpg,#fullwidthlandmarkpg,#fullwidthwahlburgpg{width:0;}
+.individualProjectPages{margin:auto;padding:10vh auto 10vh auto;top:0;width:100vw;background-color:rgba(0,0,0,0.6);min-height:90vh;}
+.ProjectsPgTitles,.ProjectsPgTitles2{position:relative;color:white;}
+    .ProjectsPgTitles{margin:4vh auto 2vh auto;top:1vh;font-family:var(--Antonio);font-weight:500;font-size:40px;}
+    .ProjectsPgTitles2{margin:auto auto 4vh auto;font-family:var(--Yan);font-weight:300;font-size:18px;}
+.ProjectsBackButton,.ProjectsExitButton{display:block;position:relative;color:white;}
+    .ProjectsBackButton{margin:10vh auto auto 0;inset:2vh auto 2vw auto;font-size:18px;font-family:var(--Yan);font-weight:300;text-align:left;} 
+    .projectsExitButton{margin:0 auto auto 90vw;top:0;font-size:40px;font-family:"Roboto",sans-serif;font-weight:600;color:white;}
+        .ProjectsBackButton:hover,.projectsExitButton:hover{color:var(--blue);cursor:pointer;}
+.BCprojRFlink{display:block;position:relative;margin:auto;text-decoration:none;font-size:18px;color:white;font-family:var(--Yan);font-weight:300;} 
+    .BCprojRFlink:link,.BCprojRFlink:visited,.BCprojRFlink:active,.BCprojRFlinkA:link,
+            .BCprojRFlinkA:visited,.BCprojRFlinkA:active{text-decoration:none;color:white;}
+        .BCprojRFlink:hover,.BCprojRFlinkA:hover{color:var(--blue);cursor:pointer;}
+.projectimgdivs{display:grid;margin:auto auto auto 10vw;width:80vw;vertical-align:middle;text-align:center;
+        grid-template-columns:15vw 50vw 15vw;grid-template-rows:50vh;}
+.projectspagesimgsdiv{position:relative;margin:auto;grid-column:2;}      
+    .projectsPagesImgs{display:block;position:relative;margin:auto;width:50vw;max-height:50vh;
+        float:inherit;vertical-align:middle;text-align:center;object-fit:cover;overflow:hidden;}
+.projectimgdiv2,.projectimgdiv3,.projectimgdiv4,.projectimgdiv5,.projectimgdiv6,.projectimgdiv7,.projectimgdiv8,.projectimgdiv9{display:none;}
+.projlastimagebuttonsdiv,.projnextimagebuttonsdiv,.projnextimagebuttons{position:relative;margin:auto;height:10vh;}
+    .projlastimagebuttonsdiv{grid-column:1;}    .projnextimagebuttonsdiv{grid-column:3;}
+    .projnextimagebuttons{display:block;}       
+        .projectnextimagebuttons_invisible{display:block;opacity:0;}
+    .buttonwhite{z-index:100;}      .buttonblue{margin:-10vh auto auto auto}
+    .buttonwhite:hover,.buttonblue:hover{cursor:pointer;z-index:-1000}    .buttonblue:hover{z-index:1000;}
+}
+/* MOBILE PROJECTS PAGE ----------------------------------------------------------------------------------------------*/  
+@media only screen and (max-width: 768px) {
+.projectpgsfullwidth{position:absolute;margin:auto;inset:auto auto 0 auto;height:100vh;width:100vw;overflow-x:hidden;text-align:center;}
+#projectspg{margin:auto;padding:10vh auto 10vh auto;top:0;width:100vw;min-height:100vh;background-color:var(--white80);}
+#ProjectsPgTitle1{margin:10vh auto 6vh auto;}
+.ProjectsPgTitle2{margin:5vh auto;position:relative;top:10vh;font-family:var(--Yan);font-weight:300;}
+.projectspgGridMobile{display:grid;position:relative;margin:16vh auto auto calc( 15vw - 10px );padding:0;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh;
+        grid-template-columns:70vw;gap:5vh 0;align-content:center;vertical-align:middle;text-align:center;}
+    .projectspgGrid{display:none;}
+.projectspgboxes{position:relative;margin:auto;width:70vw;border:5px solid var(--greyborder);background-color:white;}
+.projectsImgDiv{position:relative;margin:auto;height:30vh;overflow:hidden;}
+        .projectsboxImages{display:block;position:relative;margin:auto;inset:auto;width:70vw;height:30vh;float:inherit;vertical-align:middle;object-fit:cover;}
+.projboxdivisionline{position:relative;margin:auto;background-color:var(--greyborder);height:5px;}
+.projectsBoxTextGroup{position:relative;top:0;}
+        .projBoxDesc1{margin:auto;text-decoration:none;text-align:center;color:var(--blue);font-family:var(--Antonio);font-weight:400;font-size:25px;}
+        .projBoxDesc2{margin:auto;text-decoration:none;text-align:center;font-family:var(--Yan);font-weight:300;font-size:15px;}
+#projectspgBottomHR{position:relative;margin:5vh auto;width:80vw;}
+#projectspgBottomDiv{position:relative;height:10vh;top:20vh;margin:auto auto -15vh auto;background-color:var(--white80);}
+    
+/* PROJECTS: INDIVIDUAL PROJECTS PAGES (MOBILE) -----------------------------------------------------------------------------------------------------*/ 
+
+#fullwidthauerbachpg,#fullwidthclarendonpg,#fullwidthnewbalancepg,#fullwidthnortheasternpg,
+    #fullwidthseaport1pg,#fullwidthbostoncollegepg,#fullwidthmacallenpg,#fullwidthpostofficepg,
+    #fullwidthgailenpg,#fullwidthklarminpg,#fullwidthparcelmpg,#fullwidthpier4pg,
+    #fullwidthwatertownpg,#fullwidthdrydockpg,#fullwidthlandmarkpg,#fullwidthwahlburgpg{width:0;}
+.individualProjectPages{margin:auto;padding:10vh auto auto auto;background-color:rgba(0,0,0,0.8);width:100vw;height:90vh;top:0;}
+.ProjectsPgTitles,.ProjectsPgTitles2{position:relative;color:white;text-align:center;margin:auto;}
+    .ProjectsPgTitles{font-family:var(--Antonio);font-weight:500;font-size:30px;bottom:15px;}
+    .ProjectsPgTitles2{font-family:var(--Yan);font-weight:300;font-size:16px;bottom:10px;}
+.ProjectsBackButton,.ProjectsExitButton{position:absolute;color:white;}
+    .ProjectsBackButton{font-size:16px;font-family:var(--Yan);font-weight:300;margin:12px auto auto 0;}
+    .projectsExitButton{margin:10vh auto auto 90vw;font-size:40px;font-family:"Roboto",sans-serif;font-weight:600;color:white;}
+        .ProjectsBackButton:link,.ProjectsBackButton:visited,.ProjectsBackButton:active,.ProjectsExitButton:link,
+                .ProjectsExitButton:visited,.ProjectsExitButton:active{text-decoration:none;color:white;}
+.BCprojRFlink{display:block;position:relative;margin:auto;text-decoration:none;font-size:18px;color:white;font-family:var(--Yan);font-weight:300;}
+    .BCprojRFlink:link,.BCprojRFlink:visited,.BCprojRFlink:active,.BCprojRFlinkA:link,
+            .BCprojRFlinkA:visited,.BCprojRFlinkA:active{text-decoration:none;color:white;}
+        .BCprojRFlink:hover,.BCprojRFlinkA:hover{color:var(--blue);cursor:pointer;}
+.projectimgdivs{display:grid;margin:5vh auto 5vh 10vw;width:80vw;vertical-align:middle;text-align:center;
+        grid-template-columns:15vw 50vw 15vw;grid-template-rows:50vh 15vh;gap:0;}
+.projectspagesimgsdiv{position:relative;margin:auto;grid-column:1 / span 3;grid-row:1;}      
+    .projectsPagesImgs{display:block;position:relative;margin:auto;width:80vw;max-height:50vh;
+            float:inherit;vertical-align:middle;text-align:center;object-fit:cover;overflow:hidden;}
+.projectimgdiv2,.projectimgdiv3,.projectimgdiv4,.projectimgdiv5,.projectimgdiv6,.projectimgdiv7,.projectimgdiv8,.projectimgdiv9{display:none;}
+.projlastimagebuttonsdiv,.projnextimagebuttonsdiv,.projnextimagebuttons{position:relative;margin:auto;height:10vh;}
+        .projlastimagebuttonsdiv{grid-column:1;grid-row:2;}    
+        .projnextimagebuttonsdiv{grid-column:3;grid-row:2;}
+        .projnextimagebuttons{display:block;}
+            .projectnextimagebuttons_invisible{display:block;opacity:0;}
+        .buttonwhite{z-index:100;}                  .buttonblue{margin:-10vh auto auto auto}  
+}
+ 
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* SAFETY PAGE (DESKTOP) ---------------------------------------------------------------------------------------------*/  
+@media only screen and (min-width: 768px) {
+#safetypg{margin:auto;padding:10vh auto 10vh auto;width:80vw;min-height:100vh;top:0;background-color:var(--white80);}
+.safetyTextContainer{position:relative;margin:auto;width:60vw;top:0;text-align:left;}
+    #safetyTextContainer1{top:10vh;}            #safetyTextContainer2{top:10vh;width:50vw;}
+    #safetyTextContainer3{margin:auto auto auto 5vw;width:40vw;}
+.safetytext1,.safetytextTop{font-family:var(--Yan);font-weight:300;font-size:16px;}     .safetytextTop{font-size:20px;}
+#safetypgTitle1{top:10vh;margin:10vh auto 6vh auto;}        
+#safetypgBottomHR{position:relative;margin:15vh auto 5vh auto;}
+#safetypgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);}
+}
+
+/* MOBILE SAFETY PAGE ------------------------------------------------------------------------------------------------*/  
+@media only screen and (max-width: 768px) {
+#safetypg{margin:10vh auto auto auto;padding:10vh auto 10vh auto;width:100vw;min-height:100vh;background-color:var(--white80);}
+#safetypgTitle1{top:10vh;margin:10vh auto 6vh auto;}
+.safetyTextContainer{position:relative;margin:10vh auto auto auto;width:80vw;top:10vh;text-align:left;}
+    #safetyTextContainer1{top:5vh;}             #safetyTextContainer2{top:0;width:70vw;}
+    #safetyTextContainer3{top:0;margin:auto auto auto 5vw;width:60vw;}
+.safetytext1,.safetytextTop{font-family:var(--Yan);font-weight:300;font-size:16px;}     .safetytextTop{font-size:20px}
+#safetypgBottomHR{position:relative;margin:10vh auto 5vh auto;width:80vw;}
+#safetypgBottomDiv{position:relative;margin:auto auto -15vh auto;height:10vh;top:20vh;background-color:var(--white80);}
+}     
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* CONTACT PAGE (DESKTOP)---------------------------------------------------------------------------------------------*/         
+@media only screen and (min-width: 768px) {    
+#contactpg{margin:auto;padding:auto;background-color:var(--white80);width:80vw;height:80vh;}
+#contactpgTitle1{margin:10vh auto;}
+.Address{position:relative;margin:auto;top:10vh;font-family:var(--Antonio);font-weight:300;font-size:20px;}
+.contactpgcontainer{display:grid;position:absolute;margin:auto;padding:0;inset:60vh auto auto 19vw;text-align:center;
+            grid-template-columns:16vw 4vw 10vw 2vw 10vw 4vw 16vw;gap:0;}
+.contactboxes,.contacticonsdiv,.contacticon,.contacttitles,.contactinfo{position:relative;margin:auto;color:var(--blue);}
+        .contacticon{display:block;height:5vh;}
+        .contacttitles{font-family:var(--Yan);font-weight:300;font-size:2vh;}
+        .contactinfo{font-family:var(--Antonio);font-weight:400;font-size:2.5vh;}    
+    .contactpgLink:link,.contactpgLink:visited,.contactpgLink:hover,.contactpgLink:active{color:var(--blue);text-decoration:none;}
+.contactpgcontainerMobile{display:none;}
+
+/* FOOTER (Contact Page) ....................................................................................*/
+.contactpgfooterMobile,.contactpgcopyrightMobile{display:none;}
+.contactpgfooter{position:fixed;margin:0;padding:0;bottom:0;width:100vw;height:15vh;background-color:white;vertical-align:middle;}
+.contactpgcopyright{position:relative;margin:0 auto 4vh auto;top:10vh;vertical-align:middle;font-size:14px;font-family:var(--Yan);font-weight:300;}
+} 
+/* MOBILE CONTACT PAGE -----------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {    
+#contactpg{margin:auto;padding:10vh auto 10vh auto;padding:auto;width:100vw;height:90vh;background-color:var(--white80);}
+#contactpgTitle1{margin:10vh auto 5vh auto;}
+.Address{position:relative;margin:auto;top:10vh;font-family:var(--Antonio);font-weight:400;font-size:24px}
+.contactpgcontainer{display:none;}
+.contactpgcontainerMobile{display:grid;position:absolute;margin:auto;padding:0;inset:50vh auto auto calc( 50vw - 160px );
+            grid-template-columns:40px 260px;grid-template-rows:60px 60px 60px 60px;gap:25px;align-content:center;vertical-align:middle;}
+.iconsDivMobileContactPg{position:relative;margin:auto;padding:auto;vertical-align:middle;align-content:center;}
+.iconImgMobileContactPg{display:block;position:relative;margin:auto;height:50px;vertical-align:middle;}
+.textDivMobileContactPg{position:relative;text-align:left;vertical-align:middle;text-decoration:none;}
+.textMobileContactPg{position:relative;margin:auto;top:auto;text-decoration:none;font-family:var(--Antonio);font-weight:400;font-size:25px;}
+    .textMobileContactPg_Small{font-size:15px;font-weight:200;}
+.contactpgLink:link,.contactpgLink:visited,.contactpgLink:hover,.contactpgLink:active{color:var(--blue);text-decoration:none;}
+
+/* MOBILE FOOTER (Contact Page) ....................................................................................*/
+.contactpgfooter,.contactpgcopyright{display:none;}
+.contactpgfooterMobile{position:fixed;margin:0;padding:0;background-color:white;bottom:0;width:100vw;height:50px;}
+.contactpgcopyrightMobile{position:relative;margin:10px auto auto auto;text-align:center;vertical-align:middle;font-size:12px;font-family:var(--Yan);font-weight:300;}   
+} 
+
+/* ------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------*/
